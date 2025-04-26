@@ -1,9 +1,4 @@
-@extends('layouts.layout')
-
 @section('title', 'Авторизация')
-
-@section('content')
-
 
 <!doctype html>
 <html lang="en">
@@ -28,9 +23,8 @@
             <input type="submit" value="Войти">
         </div>
         <!-- заглушка --> <a href="{{ route('home') }}">Войти</a>
-        <!-- заглушка --> <a href="{{ route('admin-home') }}">Войти(admin)</a>
     </div>
 </body>
 </html>
 
-@endsection
+

@@ -1,28 +1,33 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2.0, minimum-scale=0.5">
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title')</title>
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="../../../public/assets/css/layout.css">
 </head>
 <body>
+<div class="menu">
+    <h1>Tepk-IT</h1>
+    <ul class="menu-list">
+        <li><img src="{{ asset('assets/images/profile.svg') }}" alt="Личный кабинет"><a href="#">Личный <br>кабинет</a></li>
 
-<header>
-    <nav>
+        @auth
+            @if(auth()->user()->role === 'admin')
+                <!-- Пункты меню для администратора -->
+                <li><img src="{{ asset('assets/images/group.svg') }}" alt="Группы"><a href="#">Группы и <br>пользователи</a></li>
+                <li><img src="{{ asset('assets/images/files.svg') }}" alt="Файлы"><a href="#">Файлы</a></li>
+                <li><img src="{{ asset('assets/images/check.svg') }}" alt="Проверка"><a href="#">Проверка</a></li>
+            @endif
+        @endauth
 
-    </nav>
-</header>
-
-<main>
-    @yield('content')
-</main>
-
-<footer>
-
-</footer>
+        <li><img src="{{ asset('assets/images/about.svg') }}" alt="О системе"><a href="#">О системе</a></li>
+        <li><img src="{{ asset('assets/images/logout.svg') }}" alt="Выход"><a href="/">Выход</a></li>
+    </ul>
+</div>
 
 </body>
 </html>
+
