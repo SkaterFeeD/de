@@ -23,6 +23,7 @@
             <input type="submit" value="Войти">
         </div>
         <!-- заглушка --> <a href="{{ route('home') }}">Войти</a>
+        <!-- заглушка --> <a href="{{ route('groups') }}">groupsandusers</a>
     </div>
 </body>
 </html>

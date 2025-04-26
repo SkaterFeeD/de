@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.user-add {
+    margin-left: 40px;
+    color: white;
+    padding-top: 40px;
+}
+.user-add > h1 {
+    font-size: 30px;
+    font-weight: 400;
+}
+.user-add-content {
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 1560px;
+    height: 230px;
+    border-radius: 32px;
+    background-color: #141517;
+    align-items: center;
+}
+.user-add-elements {
+    width: 478px;
+    height: 102px;
+    border: 1px white solid;
+    background-color: #1E1F24;
+    border-radius: 32px;
+    padding: 20px;
+    margin-left: 179px;
+}
+.group-add-elements {
+    width: 693px;
+    height: 190px;
+    padding: 40px;
+    border: 1px solid white;
+    background-color: #1E1F24;
+    border-radius: 32px;
+    margin-left: 30px;
+    margin-right: 179px;
+}
+
+

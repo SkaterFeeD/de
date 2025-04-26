@@ -27,6 +27,9 @@
         <li><img src="{{ asset('assets/images/logout.svg') }}" alt="Выход"><a href="/">Выход</a></li>
     </ul>
 </div>
+<main class="content">
+    @yield('content')
+</main>
 
 </body>
 </html>
