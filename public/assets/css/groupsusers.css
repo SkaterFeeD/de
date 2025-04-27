@@ -9,9 +9,28 @@ body {
     padding-top: 40px;
 }
 .user-add > h1 {
+    font-family: "Tektur", sans-serif;
     font-size: 30px;
     font-weight: 400;
 }
+.form-input {
+    font-family: 'Jura', sans-serif;
+    font-size: 20px;
+    width: 280px;
+    height: 40px;
+    border: 3px solid #5051F9;
+    color: #FFFFFF;
+    border-radius: 5px;
+    padding-left: 20px;
+    display: block;
+    margin-top: 5px;
+    background-color: transparent;
+}
+.form-input:focus {
+    outline: none;
+    border: 2px solid #0000fb;
+}
+
 .user-add-content {
     display: flex;
     margin-top: 30px;
@@ -31,15 +50,169 @@ body {
     padding: 20px;
     margin-left: 179px;
 }
+.user-add-elements > h3 {
+    font-family: "Tektur", sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+}
+.user-add-elements button {
+    font-family: 'Jura', sans-serif;
+    font-size: 16px;
+    width: 100px;
+    height: 24px;
+    background: #1E1F24;
+    color: white;
+    border: 1px solid #5051F9;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.user-add-elements button:hover {
+    background: #3A3AF0;
+    box-shadow: 0 4px 8px rgba(80, 81, 249, 0.3);
+    transform: translateY(-2px);
+}
 .group-add-elements {
     width: 693px;
-    height: 190px;
-    padding: 40px;
+    padding: 20px;
     border: 1px solid white;
     background-color: #1E1F24;
     border-radius: 32px;
     margin-left: 30px;
     margin-right: 179px;
 }
+.group-add-elements h3 {
+    font-family: "Tektur", sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.group-add-elements form {
+    display: grid;
+}
+.form-group:nth-child(1) { /* ФИО */
+    grid-column: 0;
+    grid-row: 0;
+}
+
+.form-group:nth-child(2) { /* Логин */
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.form-group:nth-child(3) { /* Пароль */
+    grid-column: 0;
+    grid-row: 1;
+}
+
+.form-group:nth-child(4) { /* Группа */
+    grid-column: 1;
+    grid-row: 0;
+}
+
+
+.table-container {
+    color: white;
+    padding-top: 40px;
+}
+.users-table-content {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 1560px;
+    height: 230px;
+    border-radius: 32px;
+    background-color: #141517;
+    align-items: center;
+}
+.users-table-content h1 {
+    padding-left: 30px;
+    padding-top: 20px;
+    font-size: 26px;
+    font-family: "Tektur", sans-serif;
+    font-weight: 400;
+
+}
+.table-container > h1 {
+    font-family: "Tektur", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+.users-table-element {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Jura', sans-serif;
+    color: white;
+    table-layout: fixed;
+}
+
+/* Стили для заголовков */
+.users-table-element th {
+    text-align: center;
+    font-family: 'Tektur', sans-serif;
+    border-bottom: 2px solid #5051F9;
+    height: 40px;
+}
+
+/* Первая графа (ФИО) */
+.users-table-element th:first-child,
+.users-table-element td:first-child {
+    width: 327px;
+    height: 26px;
+    background-color: #1E1F24;
+}
+
+/* Остальные графы */
+.users-table-element th:not(:first-child),
+.users-table-element td:not(:first-child) {
+    background-color: #1E1F24; /* Темный фон для остальных граф */
+}
+
+/* Конкретные ширины */
+.users-table-element th:nth-child(2),
+.users-table-element td:nth-child(2) {
+    width: 166px;
+    height: 40px;
+}
+
+.users-table-element th:nth-child(3),
+.users-table-element td:nth-child(3) {
+    width: 236px;
+    height: 40px;
+}
+
+.users-table-element th:nth-child(4),
+.users-table-element td:nth-child(4) {
+    width: 535px;
+    height: 40px;
+}
+
+/* Содержимое ячеек */
+.users-table-element td {
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid #2D2D3A;
+}
+
+/* Hover-эффект */
+.users-table-element tr:hover td:not(:first-child) {
+    background-color: rgba(80, 81, 249, 0.1);
+}
+
+/* Состояния статусов */
+.status-new {
+    color: #4CAF50;
+    padding: 5px 10px;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+.status-active {
+    color: #2196F3;
+    padding: 5px 10px;
+    border-radius: 12px;
+    display: inline-block;
+}
+
 
 

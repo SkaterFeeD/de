@@ -8,10 +8,9 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('home');
 })->name('home');
-
 Route::get('/groups', function () {
     return view('groupsusers');
-});
+})->name('groups');
 
 
 
